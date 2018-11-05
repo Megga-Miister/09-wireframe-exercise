@@ -1,48 +1,79 @@
-header{
-  width:100%;
-  height:25%; 
-  bottom:0;
-  left:0;
-  background-color:#696969;
+html {
+  width: 1080px;
+  margin: auto;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  width:100%;
+  bottom:0;
+  left:0;
+  padding: 15px;
+  background-color:#696969;
+}
 #header{
   margin: auto;
   width: 80%;
-  margin-bottom: 20px;
+  height: 70px;
 }
-
 nav{
-  display: inline;
+  margin: auto;
+  display: inline-flex;
+  vertical-align: top;
 }
-
 .nav{
-  margin-left: 30px;
+  padding: 20px;
+  text-decoration: none;
+  color:lightgrey;
 }
 
 main{
+  display: inline-block;
+  margin: 30px 30px 30px 0;
+}
+ #hero-image{
+  margin: 30px;
+  align-content: center;
+}
+
+#sub-banners{
   display: grid;
-  grid-template-columns: repeat(3,1.2fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  height: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  column-gap: 5px;
+}
+
+#featured-section-banner{
+  margin-top: 30px;
+  float: left
 }
 
 figure{
-  position: relative;
+  float: right;
   width: 480px;
   height: 400;
+  margin-top: 30px;
 }
-
+h4{
+  margin-bottom: 20px;
+  font-size: 225%;
+}
 p{
   width: 480px;
   height: 240;
-  overflow: scroll;
-}
+  overflow-y: scroll;
 
+  font-size: 115%;
+  font-style: italic;
+}
 button{
-  position: absolute;
   top: 320px;
   left: 0;
+  display: inline-block;
   
   width:360px;
   height: 80px;
@@ -50,6 +81,11 @@ button{
 
   background-color:black;
   color: white;
+  text-align: center;
+  font-size: 200%;
+}
+button:hover{
+  background-color: gray;
 }
 
 footer{

@@ -1,97 +1,113 @@
-html {
-  width: 1080px;
-  margin: auto;
-}
-
 body{
   font-family: Arial, Helvetica, sans-serif;
+  width: 1080px;
 }
 
 header{
-  width:100%;
-  bottom:0;
-  left:0;
-  padding: 15px;
+  height: 100px;
   background-color:#696969;
 }
+
 #header{
-  margin: auto;
-  width: 80%;
-  height: 70px;
+  padding-top: 15px;
+  margin-left: 60px;
 }
+
+#logo{
+  margin-right:30px;
+}
+
 nav{
   margin: auto;
   display: inline-flex;
-  vertical-align: top;
 }
-.nav{
-  padding: 20px;
+
+ul li {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 60px;
+}
+
+.nav1{
+  text-decoration: none;
+  color:lightgrey;
+}
+.nav2{
+  text-decoration: none;
+  color:lightgrey;
+}
+.nav3{
+  text-decoration: none;
+  color:lightgrey;
+}
+.nav4{
   text-decoration: none;
   color:lightgrey;
 }
 
 main{
-  display: inline-block;
-  margin: 30px 30px 30px 0;
+  margin-left: 60px;
+  margin-right: 60px;
+  
 }
  #hero-image{
-  margin: 30px;
-  align-content: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 
 #sub-banners{
   display: grid;
-  height: 100px;
+  height: 400px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
-  column-gap: 5px;
+  column-gap: 30px;
 }
 
-#featured-section-banner{
-  margin-top: 30px;
-  float: left
+#featured-section{
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 480px;
+  column-gap: 30px;
+
+  margin-bottom: 30px;
 }
 
 figure{
-  float: right;
   width: 480px;
-  height: 400;
-  margin-top: 30px;
+  height: 400px;
+  margin: 0px;
 }
 h4{
-  margin-bottom: 20px;
-  font-size: 225%;
+  margin: 0px;
+  font-size: 125%;
 }
 p{
-  width: 480px;
-  height: 240;
+  height: 200;
+  margin: 0px;
   overflow-y: scroll;
 
-  font-size: 115%;
+  font-size: 100%;
   font-style: italic;
 }
 button{
-  top: 320px;
-  left: 0;
-  display: inline-block;
-  
-  width:360px;
-  height: 80px;
+  width:150px;
+  height: 45px;
   border-radius: 5px;
 
   background-color:black;
   color: white;
   text-align: center;
-  font-size: 200%;
+  font-size: 110%;
+  transition: color 350ms;
 }
 button:hover{
   background-color: gray;
 }
 
 footer{
-  width:100%;
-  height:25%; 
-  bottom:0;
-  left:0;
+  height: 100px;
   background-color:#696969;
+  color: #696969;
 }
